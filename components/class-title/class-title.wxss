@@ -1,0 +1,13 @@
+/* components/class-title/class-title.wxss */
+.class-title {
+  display: flex;  
+  align-items: center;
+  padding: 20px 30px;
+}
+.class-title .class-pic {
+    margin-right: 20px;
+}
+.class-title .class-info {
+  line-height: 40px;
+  text-decoration: underline;
+}

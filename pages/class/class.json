@@ -1,4 +1,11 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "class-title": "/components/class-title/class-title",
+    "epidemic-info": "/components/epidemic-info/epidemic-info",
+    "class-inform": "/components/class-inform/class-inform",
+    "class-files": "/components/class-files/class-files",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  },
   "navigationBarTitleText": "班级"
 }

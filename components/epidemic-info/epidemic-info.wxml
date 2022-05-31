@@ -1,0 +1,6 @@
+<!--components/epidemic-info/epidemic-info.wxml--> 
+<view class="epidemic-info">
+  <view class="epidemic-date">几月几日</view>
+  <view class="epidemic-place">具体地点：北京省、上海市、河北省、石家庄、广东省白云区</view>
+  <view class="send-date">发布日期</view>
+</view>

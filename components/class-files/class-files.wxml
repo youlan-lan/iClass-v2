@@ -1,0 +1,23 @@
+<!--components/class-files/class-files.wxml--> 
+<view class="class-files">
+  <view class="class-show">
+    <view class="class-avatar"></view>
+    <view class="class-name">课程1</view>
+  </view> 
+  <view class="class-show">
+    <view class="class-avatar"></view>
+    <view class="class-name">课程2</view>
+  </view>
+  <view class="class-show">
+    <view class="class-avatar"></view>
+    <view class="class-name">课程3</view>
+  </view>
+  <view class="class-show">
+    <view class="class-avatar"></view>
+    <view class="class-name">课程3</view>
+  </view> 
+  <view class="class-show">
+    <view class="class-avatar"></view>
+    <view class="class-name">课程3</view>
+  </view>
+</view>
