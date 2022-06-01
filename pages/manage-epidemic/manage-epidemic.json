@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "epidemic-info": "/components/epidemic-info/epidemic-info",
+    "add-epidemic": "/components/add-epidemic/add-epidemic",
+    "van-nav-bar": "@vant/weapp/nav-bar/index", 
+    "van-button": "@vant/weapp/button/index",
+    "van-overlay": "@vant/weapp/overlay/index"
+  }
+}

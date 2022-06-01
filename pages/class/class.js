@@ -64,6 +64,11 @@ Page({
         }, 1000); 
     }
   },
+  epidemicManage() {
+    wx.navigateTo({
+      url: '/pages/manage-epidemic/manage-epidemic',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面隐藏

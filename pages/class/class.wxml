@@ -1,7 +1,10 @@
 <!--pages/class.wxml-->
 <view class="class">
   <class-title bindtap="handleClick" />
-  <view class="marked-words" style="display: {{showEpidemicInfo?'none':'block'}}">涉疫地点滚动播放（一周内）</view>
+  <view class="marked-words" style="display: {{showEpidemicInfo?'none':'block'}}">
+    <view class="epidemic-manage" bindtap="epidemicManage">管理</view>
+    <text> 涉疫地点滚动播放（一周内）</text>
+  </view>
   <epidemic-info style="display: {{showEpidemicInfo?'block':'none'}};"/> 
 </view>
 <view 

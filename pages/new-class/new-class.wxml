@@ -1,0 +1,9 @@
+<!--pages/new-class/new-class.wxml--> 
+<view class="new-class">
+  <class-item/>
+  <class-item/>
+  <class-item/>
+</view>
+<view class="new-class-btn">
+  <van-button type="info">创建班级</van-button>
+</view>

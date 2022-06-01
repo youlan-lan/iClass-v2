@@ -1,0 +1,5 @@
+<!--components/add-epidemic/epidemic-date/epidemic-date.wxml-->
+<view class="epidemic-date"> 
+  <van-cell title="日期" value="{{ date }}"bind:click="onDisplay" />
+  <van-calendar color="#0164FD" show="{{ show }}"bind:close="onClose" bind:confirm="onConfirm" />
+</view>

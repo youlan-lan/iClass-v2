@@ -1,0 +1,12 @@
+/* components/add-epidemic/add-epidemic.wxss */
+.add-epidemic {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;   
+  padding: 40rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+} 
+.add-epidemic .btn { 
+  text-align: center; 
+}

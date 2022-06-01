@@ -3,7 +3,9 @@
     "pages/home/home",
     "pages/class/class",
     "pages/my/my",
-    "pages/class-manage/class-manage"
+    "pages/class-manage/class-manage",
+    "pages/new-class/new-class",
+    "pages/manage-epidemic/manage-epidemic"
   ],
   "window": {
     "backgroundTextStyle": "light",

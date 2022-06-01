@@ -20,6 +20,20 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "创建班级页面",
+          "pathName": "pages/new-class/new-class",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "疫情管理",
+          "pathName": "pages/manage-epidemic/manage-epidemic",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
