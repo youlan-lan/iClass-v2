@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": { 
+    "epidemic-place": "./epidemic-place/epidemic-place",
+    "epidemic-date": "./epidemic-date/epidemic-date",
+    "van-button": "@vant/weapp/button/index"
+  }
+}

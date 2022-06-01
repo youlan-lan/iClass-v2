@@ -1,0 +1,10 @@
+<!--components/class-title/class-title.wxml--> 
+<view class="class-title">
+  <view class="class-pic" catchtap="handleTap">
+    <van-image width="150" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg"/>
+  </view>
+  <view class="class-info">
+    <view>班级名称</view>
+    <view>班级人数</view>
+  </view>
+</view>

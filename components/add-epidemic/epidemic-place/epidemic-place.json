@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": { 
+    "van-cell": "@vant/weapp/cell/index",
+    "van-area": "@vant/weapp/area/index"
+  }
+}

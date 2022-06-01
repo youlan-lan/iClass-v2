@@ -1,0 +1,5 @@
+/* components/add-epidemic/epidemic-date/epidemic-date.wxss */
+.epidemic-date {
+  margin-top: 30rpx;
+  border: 1px solid #cccccc;
+}

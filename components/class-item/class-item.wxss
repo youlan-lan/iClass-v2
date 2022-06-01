@@ -1,0 +1,10 @@
+/* components/class-item/class-item.wxss */
+.class-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  margin: 20rpx auto; 
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+} 

@@ -5,28 +5,69 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    showClassEvent: 1,
+    showEpidemicInfo: 0,
+    flag: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
+  },
 
+  handleClick() {     
+    if(this.data.flag) return false;
+    this.data.flag = true;
+    if(this.data.showClassEvent) {
+        this.animate('.class-event',
+        [
+            {top: '400rpx', opacity: 1}, 
+            {top: '800rpx', opacity: 0}
+        ], 500);
+        let { showEpidemicInfo} = this.data;
+        showEpidemicInfo = 1;
+        this.setData({ showEpidemicInfo })
+        setTimeout(() => {
+            let { showClassEvent, flag } = this.data
+            showClassEvent = 0;
+            flag = false;
+            this.setData({ showClassEvent, flag })
+        }, 1000); 
+    } else {
+        this.animate('.class-event',
+        [
+            {top: '800rpx', opacity: 0}, 
+            {top: '400rpx', opacity: 1}
+        ], 500);
+        let {showClassEvent} = this.data
+        showClassEvent = 1;
+        this.setData({ showClassEvent })
+        setTimeout(() => {
+            let { showEpidemicInfo, flag } = this.data;
+            showEpidemicInfo = 0;
+            flag = false;
+            this.setData({ showEpidemicInfo, flag })
+        }, 1000); 
+    }
+  },
+  epidemicManage() {
+    wx.navigateTo({
+      url: '/pages/manage-epidemic/manage-epidemic',
+    })
   },
 
   /**

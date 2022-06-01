@@ -1,0 +1,16 @@
+/* pages/manage-epidemic/manage-epidemic.wxss */
+.new-class-btn {  
+  text-align: center;
+} 
+.van-button {
+  margin-top: 40rpx;
+  width: 200rpx;
+  border-radius: 20rpx;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+} 

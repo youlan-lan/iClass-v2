@@ -1,0 +1,14 @@
+/* pages/class-manage/class-manage.wxss */
+.manage-title {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center; 
+  height: 100rpx;
+  margin: 0 auto; 
+  border-bottom: 1px solid #ccc;
+}   
+.pickTask {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}

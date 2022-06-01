@@ -1,1 +1,27 @@
 /* pages/class/class.wxss */
+.van-ellipsis {
+  font-size: 36rpx;
+}
+.class-event {
+  position: absolute;
+  z-index: 100;
+  top: 360rpx;
+  width: 100vw; 
+  border-top: 1px solid #aaa;
+  background-color: #fff;
+  overflow: hidden;
+}
+.marked-words {
+    position: relative;
+    width: 80vw;
+    padding: 40rpx;
+    margin:  0 auto;
+    border: 2rpx solid #ddd;
+    border-radius: 20rpx;
+}
+.marked-words .epidemic-manage {
+  position: absolute;
+  right: 30rpx;
+  top: 10rpx;
+  color: #bbb;
+}

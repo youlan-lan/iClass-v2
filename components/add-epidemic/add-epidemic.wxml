@@ -1,0 +1,8 @@
+<!--components/add-epidemic/add-epidemic.wxml-->
+<view class="add-epidemic">
+  <epidemic-place />
+  <epidemic-date />
+  <view class="btn">
+   <van-button type="info" catchtap="onClickHide">确认</van-button>
+  </view> 
+</view>

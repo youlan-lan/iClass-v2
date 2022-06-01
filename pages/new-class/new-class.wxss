@@ -1,0 +1,5 @@
+/* pages/new-class/new-class.wxss */
+.new-class-btn {
+  margin-top: 40rpx;  
+  text-align: center;
+}
