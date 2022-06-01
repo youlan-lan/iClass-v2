@@ -1,0 +1,10 @@
+<!--components/manage-item/manage-item.wxml--> 
+<view class="manage-item">
+  <view class="item-avatar">
+    <van-image round width="40" height="40" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+  </view>
+  <view class="item-name">xxx</view>
+  <view class="item-number">3220007777</view>
+  <view class="item-task" catchtap="changeTask">班长</view>
+</view>
+

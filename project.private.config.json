@@ -13,6 +13,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "班级管理页面",
+          "pathName": "pages/class-manage/class-manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

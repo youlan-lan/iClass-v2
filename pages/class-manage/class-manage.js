@@ -1,11 +1,13 @@
-// pages/class-manage/class-manage.js
+// pages/class-manage/class-manage.js 
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    columns: ['班长', '团支书', '副班长', '组织委员', '宣传委员', '心理委员'], 
+    showPickTask: 0,
+    flag: 0
   },
 
   /**
@@ -13,54 +15,38 @@ Page({
    */
   onLoad(options) {
 
+  },  
+
+  hideAnimation() {
+    if(this.data.flag) return false;
+    this.data.flag = 1;
+    this.animate('.pickTask', 
+    [ {bottom: 0, opacity: 1}, {bottom: '-400rpx', opacity: 0} ], 500) 
+    setTimeout(() => { 
+      this.setData({ showPickTask: 0, flag: 0 })
+    }, 500);
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  showAnimation() {
+    if(this.data.flag) return false;
+    this.data.flag = 1;
+    this.animate('.pickTask', 
+    [ {bottom: '-400rpx', opacity: 0}, {bottom: '0', opacity: 1} ], 500) 
+    setTimeout(() => { 
+      this.setData({ showPickTask: 1, flag: 0 })
+    }, 500);
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  onCancel() {
+    this.hideAnimation();
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  onConfirm() {
+    this.hideAnimation(); 
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
+  onChange() {
+    // console.log(e);
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
+  changeTask() { 
+      this.data.showPickTask? 
+      this.hideAnimation(): 
+      this.showAnimation(); 
+  } 
 })
