@@ -1,0 +1,8 @@
+<!--components/add-epidemic/epidemic-place/epidemic-place.wxml-->
+<view class="epidemic-place">
+  <van-cell title="地点" value="{{place}}" bind:click="onDisplay"/>
+  <van-area  style="display: {{show? 'block': 'none'}};" 
+  area-list="{{ areaList }}"
+  bind:confirm="onConfirm"
+  bind:cancel="onCancel" /> 
+</view>

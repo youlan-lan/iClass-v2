@@ -1,0 +1,10 @@
+<!--components/class-item/class-item.wxml--> 
+<view class="class-item">
+  <view class="class-avatar">
+    <van-image width="120" height="80" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+  </view>
+  <view class="class-name">班级名称</view>
+  <view class="class-active">
+    <van-checkbox value="{{ checked }}" bind:change="onChange"/> 
+  </view>
+</view>

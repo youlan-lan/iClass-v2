@@ -1,0 +1,21 @@
+<!--pages/manage-epidemic/manage-epidemic.wxml-->
+<view class="manage-epidemic">
+  <van-nav-bar 
+    right-text="管理" 
+    style="padding-top: 0;"
+    bind:click-right="onClickRight"
+  />
+  <epidemic-info />
+  <epidemic-info />
+
+</view>
+<view class="new-class-btn">
+  <van-button type="info" bind:click="onClickShow">上传</van-button>
+</view>
+<view class="upload-place">
+  <van-overlay show="{{ show }}" >
+    <view class="wrapper">
+     <add-epidemic bind:onClickHide="onClickHide" />
+    </view>
+  </van-overlay>
+</view>

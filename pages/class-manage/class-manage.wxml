@@ -1,0 +1,23 @@
+<!--pages/class-manage/class-manage.wxml-->
+<view class="class-manage">
+  <view class="manage-title">
+    <view class="manage-avatar">头像</view>
+    <view class="manage-name">姓名</view>
+    <view class="manage-number">学号</view>
+    <view class="manage-task">职务</view>
+  </view> 
+  <manage-item bind:changeTask="changeTask"/>
+  <manage-item bind:changeTask="changeTask"/> 
+</view> 
+<view class="pickTask">
+  <van-picker
+    show-toolbar
+    columns="{{ columns }}" 
+    default-index="{{ 2 }}"
+    title="选择职务"
+    style="display: {{showPickTask?'block': 'none'}};"
+    bind:cancel="onCancel"
+    bind:confirm="onConfirm"
+    bind:change="onChange"
+  />
+</view>

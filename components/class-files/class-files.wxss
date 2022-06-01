@@ -1,0 +1,18 @@
+/* components/class-files/class-files.wxss */
+.class-files {
+  padding: 40rpx 30rpx;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.class-files .class-show .class-avatar {
+  width: 200rpx;
+  height: 240rpx;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+  background-color: pink;
+}
+.class-files .class-show .class-name {
+  text-align: center;
+}

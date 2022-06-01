@@ -1,0 +1,26 @@
+/* components/class-inform/class-inform.wxss */
+.class-inform {
+  display: flex;
+  align-items: center;
+  width: 74vw;
+  margin: 20px auto;
+  padding: 20px 10px;
+  border-radius: 20rpx;
+  border: 2px solid #ddd;
+}
+.class-inform .inform-img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: pink;
+}
+.class-inform .inform-status { 
+  color: red; 
+  right: 80rpx;
+  transform: translate(300rpx, -40rpx);  
+}
+.class-inform .inform-send-time {  
+  text-align: right;
+  transform: translate(160rpx, 40rpx);
+}

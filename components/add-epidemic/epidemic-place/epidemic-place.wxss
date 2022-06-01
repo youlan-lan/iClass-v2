@@ -1,0 +1,4 @@
+/* components/add-epidemic/epidemic-place/epidemic-place.wxss */
+.epidemic-place { 
+  border: 1px solid #cccccc;
+}

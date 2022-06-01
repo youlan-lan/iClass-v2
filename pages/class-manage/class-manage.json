@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "manage-item": "/components/manage-item/manage-item",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-picker": "@vant/weapp/picker/index"
+  }
+}

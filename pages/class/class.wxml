@@ -1,1 +1,31 @@
 <!--pages/class.wxml-->
+<view class="class">
+  <class-title bindtap="handleClick" />
+  <view class="marked-words" style="display: {{showEpidemicInfo?'none':'block'}}">
+    <view class="epidemic-manage" bindtap="epidemicManage">管理</view>
+    <text> 涉疫地点滚动播放（一周内）</text>
+  </view>
+  <epidemic-info style="display: {{showEpidemicInfo?'block':'none'}};"/> 
+</view>
+<view 
+    class="class-event" 
+    style="display: {{showClassEvent?'block':'none'}};">
+  <van-tabs sticky active="class-inform"
+    color="#0164FD" line-height="2px" animated="true">
+    <van-tab title="通知" name="class-inform">
+      <class-inform title='xx' status='未完成' time='2022/5/31'/>
+      <class-inform title='标题' status='new' time='2022/5/31'/> 
+      <class-inform title='xx' status='未完成' time='2022/5/31'/> 
+      <class-inform title='xx' status='未完成' time='2022/5/31'/>
+      <class-inform title='标题' status='new' time='2022/5/31'/> 
+      <class-inform title='xx' status='未完成' time='2022/5/31'/> 
+    </van-tab>
+    <van-tab title="作业" name="class-task">
+      <class-inform title='xx' status='未完成' time='2022/5/31'/>
+      <class-inform title='标题' status='new' time='2022/5/31'/>
+    </van-tab>
+    <van-tab title="文件" name="class-files">
+      <class-files/>
+    </van-tab>
+  </van-tabs>
+</view>
