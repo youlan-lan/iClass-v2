@@ -1,0 +1,10 @@
+<!--components/card-item.wxml-->
+<card-round wx:if="{{detail.title}}">
+  <view class="img">
+    <van-image round width="95rpx" height="95rpx" src="{{detail.imgSrc}}" />
+  </view>
+  <view class="title">
+    <text style="padding-right: 10rpx;">{{detail.title}}</text>
+  </view>
+  <view class="time">{{detail.deadline}}</view>
+</card-round>
