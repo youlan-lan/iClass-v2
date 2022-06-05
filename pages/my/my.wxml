@@ -1,1 +1,24 @@
 <!--pages/my/my.wxml-->
+<view class="my">
+  <!-- 头像 -->
+  <view class="my__avatar">
+    <view class="my__avatar__left">
+      <van-image round width="85" height="85" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    </view>
+    <view class="my__avatar__right">
+    <view class="my__avatar__right__wx">Shark</view>
+    <view class="my__avatar__right__real">
+      <text decode="true">黄馨莹 &nbsp;20信管创新班</text>
+    </view>
+    </view>
+  </view>
+  <!-- 操作 -->
+  <van-cell-group inset>
+    <van-cell title="常见问题" is-link icon="comment-o" />
+    <van-cell title="操作手册" is-link icon="smile-o" />
+    <van-cell title="推荐好友" icon="good-job-o" />
+    <van-cell title="草稿箱" icon="label-o" />
+    <van-cell title="问题反馈" icon="question-o" />
+    <van-cell title="退出登录" icon="guide-o" />
+  </van-cell-group>
+</view>
