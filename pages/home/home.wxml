@@ -1,1 +1,18 @@
 <!--pages/home/home.wxml-->
+<!-- 轮播图 -->
+<swiper indicator-dots autoplay>
+  <swiper-item style="background-color: greenyellow;"></swiper-item>
+  <swiper-item style="background-color: rgba(0, 195, 255, 0.753);"></swiper-item>
+  <swiper-item style="background-color: red;"></swiper-item>
+</swiper>
+
+<!-- tab选项 -->
+<van-tabs active="{{ active }}" color="#0164FD" bind:change="onChange" animated swipeable>
+  <van-tab title="未完成">
+    <!-- 列表 -->
+    <view class="doList">
+      <card-item detail="{{detail}}" />
+    </view>
+  </van-tab>
+  <van-tab title="已完成">内容 2</van-tab>
+</van-tabs>
