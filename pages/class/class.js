@@ -7,7 +7,13 @@ Page({
   data: {
     showClassEvent: 1,
     showEpidemicInfo: 0,
-    flag: false
+    flag: false,
+    detail: {
+      id: 1,
+      title: 'xxx',
+      info: '说明',
+      deadline: '2022/6/6'
+    }
   },
 
   /**

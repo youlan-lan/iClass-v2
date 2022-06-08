@@ -1,7 +1,0 @@
-<!--components/class-inform/class-inform.wxml-->
-<view class="class-inform">
-  <view class="inform-img"></view> 
-  <view class="inform-title">{{title}}</view>
-  <view class="inform-status">{{status}}</view> 
-  <view class="inform-send-time">{{time}}</view>
-</view>

@@ -1,11 +1,18 @@
 /* components/epidemic-info/epidemic-info.wxss */
-.epidemic-info {
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center; 
+
   width: 80vw;
   margin: 0 auto;
   padding: 10px;
-  margin-bottom: 20rpx;
-  border-radius: 20rpx;
-  border: 2px solid #ddd; 
+  margin-top: 20rpx;
+  border-radius: 20rpx; 
+  background-color: #fff;
+}
+.epidemic-info {
+  flex: 7;
 }
 .epidemic-info .epidemic-date {
   display: inline-block;
@@ -19,4 +26,8 @@
 .epidemic-info .send-date {
   text-align: right;
   padding: 0 10px;
+}
+.info-delete {
+  position: absolute;
+  right: 20rpx;
 }

@@ -13,16 +13,10 @@
   <van-tabs sticky active="class-inform"
     color="#0164FD" line-height="2px" animated="true">
     <van-tab title="通知" name="class-inform">
-      <class-inform title='xx' status='未完成' time='2022/5/31'/>
-      <class-inform title='标题' status='new' time='2022/5/31'/> 
-      <class-inform title='xx' status='未完成' time='2022/5/31'/> 
-      <class-inform title='xx' status='未完成' time='2022/5/31'/>
-      <class-inform title='标题' status='new' time='2022/5/31'/> 
-      <class-inform title='xx' status='未完成' time='2022/5/31'/> 
+      <card-item detail="{{detail}}"/>
     </van-tab>
     <van-tab title="作业" name="class-task">
-      <class-inform title='xx' status='未完成' time='2022/5/31'/>
-      <class-inform title='标题' status='new' time='2022/5/31'/>
+      <card-item detail="{{detail}}"/>
     </van-tab>
     <van-tab title="文件" name="class-files">
       <class-files/>
