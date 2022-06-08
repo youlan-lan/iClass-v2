@@ -32,10 +32,12 @@ Component({
       place.forEach(key => { res += key.name + ''; })
       return res;
     },
-    onConfirm(event) { 
+    onConfirm(event) {  
+      const place = this.formatPlace(event.detail.values); 
+      this.triggerEvent('getData', { place });
       this.setData({
         show: false,
-        place: this.formatPlace(event.detail.values),
+        place,
       });
     },
   }

@@ -6,7 +6,21 @@ Page({
    */
   data: {
     deleteShow: false,
-    uploadShow: false
+    uploadShow: false,
+    epidemicInfoList: [
+      {
+        id: 1,
+        date: '几月几日',
+        place: '北京省、上海市、河北省、石家庄、广东省白云区',
+        send_date: '2022/6/6'
+      },
+      {
+        id: 2,
+        date: '几月几日',
+        place: '北京省、上海市、河北省、石家庄、广东省白云区',
+        send_date: '2022/6/6'
+      }
+    ]
   },
 
   /**

@@ -4,9 +4,10 @@
     right-text="管理"  
     custom-style="padding-top: 0;" 
     bind:click-right="onClickRight"
-  />
-  <epidemic-info show="{{deleteShow}}" />
-  <epidemic-info show="{{deleteShow}}" /> 
+  /> 
+  <view class="infoList" wx:for="{{epidemicInfoList}}" wx:key="id">
+    <epidemic-info show="{{deleteShow}}" info="{{item}}" /> 
+  </view>
 </view>
 <view class="new-class-btn">
   <van-button type="info" bind:click="onClickShow">上传</van-button>

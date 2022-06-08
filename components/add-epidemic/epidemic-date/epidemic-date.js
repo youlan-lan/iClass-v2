@@ -29,11 +29,12 @@ Component({
       date = new Date(date);
       return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
     },
-    onConfirm(event) {
-      console.log(event.detail);
+    onConfirm(event) { 
+      const date = this.formatDate(event.detail);
+      this.triggerEvent('getData', { date })
       this.setData({
         show: false,
-        date: this.formatDate(event.detail),
+        date,
       });
     },
   }

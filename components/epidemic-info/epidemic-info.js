@@ -6,6 +6,12 @@ Component({
   properties: {
     show: {
       type: Boolean
+    },
+    info: { 
+      id: 1,
+      date: '几月几日',
+      place: '说明',
+      send_date: '2022/6/6'
     }
   },
 
