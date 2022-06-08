@@ -1,0 +1,9 @@
+project.config.json
+project.private.config.json
+
+miniprogram_npm
+node_modules
+.vscode
+
+yarn.lock
+yarn-error.lock
